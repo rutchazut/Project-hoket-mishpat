@@ -1,0 +1,217 @@
+body {
+  margin: 0%;
+  direction: rtl;
+  background-color: black;
+}
+.H1_bit_din{
+  background-color: #d6bf89;
+}
+header {
+  background-color: #c7b9b94a;
+  height: 15vh;
+  position: fixed;
+  z-index: 999;
+  grid-template-columns: 100%;
+  opacity: 0.7;
+  width: 100%;
+  top: -1px;
+  justify-content: flex-end;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  font-family:Calibri;
+}
+
+h6 {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  font-family:Calibri;
+  margin:5%;
+}
+
+h1 {
+  color: #fcfcfc;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  font-family:Calibri;
+}
+
+button {
+  background-color: rgba(252, 252, 252, 0);
+  flex-basis: 9%;
+  height: 7vh;
+  border: 5px ridge white;
+  margin: 5px;
+  font-size: larger;
+  font-family: Calibri;
+  font-size: 3vh;
+}
+
+button:hover {
+  background-color: #433f36;
+}
+
+a {
+  width: 15%;
+  text-decoration: none;
+  color: white;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3.5%;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* מרווח בין האלמנטים */
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%; /* נעשה שימוש ברוחב דינמי */
+  max-width: 400px; /* רוחב מקסימלי */
+  height: 300px; /* גובה קבוע */
+  perspective: 1000px; /* יצירת אפקט תלת-ממדי */
+  display: grid;
+  grid-template-columns: 1fr; /* אחת, כדי שההסתכלות תהיה אחת */
+  justify-items: center; /* ממרכז את התוכן בתוך כל תיבה */
+  margin: 2rem auto; /* מרכז את האלמנט בדף */
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s; /* אפקט מעבר רך */
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  font-family:Calibri;
+}
+
+.flip-box-front {
+  z-index: 2;
+}
+
+.flip-box-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column; /* מסדר את התוכן בצורה אנכית */
+  justify-content: center; /* מרכז את התוכן במרכז גובה */
+  align-items: center; /* מרכז את התוכן במרכז רוחב */
+  text-align: center; /* מרכז את הטקסט */
+  padding: 20px; /* מוסיף רווחים מסביב לתוכן */
+  line-height: 1.8; /* מגדיר מרווח בין השורות */
+  font-size: 1.2rem; /* גודל פונט קריא */
+  color: #ece0ca; /* צבע טקסט */
+  background-color: rgb(9, 9, 9); /* צבע רקע */
+}
+
+/* שינוי לתמונה כך שלא תתחתך */
+.flip-box-front img, .flip-box-back img {
+  width: 100%; /* התמונות יתפוסו את כל הרוחב */
+  height: 100%; /* התמונות יתפוסו את כל הגובה */
+  object-fit: contain; /* התמונות לא ייחתכו וישמרו על פרופורציות */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* יוצר שתי עמודות ברוחב שווה */
+  gap: 100px;
+  justify-content: center; /* מרכז את כל התוכן בתוך המיכל */
+  margin: 0 auto; /* מרכז את המיכל עצמו בדף */
+}
+
+.logo {
+  margin: 0;
+  width: 40px;
+}
+
+.end {
+  color: white;
+  margin-bottom: -2%;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  div {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 1500px) {
+  button {
+    flex-basis: 12%;
+  }
+  #hi {
+    display: none;
+  }
+  header img {
+    display: none;
+  }
+  .flip-box {
+    background-color: transparent;
+    flex-basis: 45%;
+    height: 353px;
+    margin: 2%;
+    margin-bottom: 4%;
+    border: 2px solid #ece0ca;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    display: none;
+  }
+}
+
+table {
+  font-family: Calibri;
+  font-size: large;
+  width: 60%;
+}
+
+td {
+  width: 30%;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  text-align: center;
+  font-size: large;
+  color: white;
+  font-family: Calibri;
+  margin-top: 1%;
+}

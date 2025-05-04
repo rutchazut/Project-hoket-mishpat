@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    direction: rtl;
+    background-color: #c1aa8c;
+    font-family: Calibri; /* הוספתי את הגופן הכללי כאן */
+}
+main video {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+    top: -10px; /* הוספתי px למען בהירות */
+}
+head {
+    background-color: #c7b9b94a;
+    height: 15vh;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.7;
+    width: 100%;
+    top: -1px;
+    justify-content: flex-end;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+    margin: 5;
+}
+button {
+    background-color: rgba(241, 220, 220, 0);
+    flex-basis: 9%;
+    height: 7vh;
+    border: 5px ridge white;
+    margin: 5px;
+    font-size: 3vh;
+}
+button:hover {
+    background-color: #3f4032;
+}
+a {
+    width: 15%;
+    text-decoration: none;
+    color: rgba(255, 252, 252, 0.636);
+}
+#sentence {
+    background-color: #ab9981;
+    text-align: center;
+}
+#sentence p {
+    font-family: Calibri;
+    font-size: 8vh;
+}
+#diteils {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1%;
+}
+section {
+    background-color: #c1aa8c;
+    border: 1px solid #c1aa8c;
+    flex-basis: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+section:hover {
+    transition: 1s;
+    transform: scale(1.055);
+    width: 100%;
+}
+section img {
+    margin-top: -20%;
+    flex-basis: 100%;
+    height: 70%;
+    border: 5px solid rgb(0, 0, 0);
+}
+#all {
+    background-color: #c1aa8c;
+    display: flex;
+    margin: 1%;
+    color: rgb(0, 0, 0);
+}
+#machine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#machine p {
+    flex-basis: 100%;
+    margin-right: 2%;
+}
+#price {
+    align-self: center;
+}
+#machine h2 {
+    margin: 2%;
+}
+#down {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+article {
+    flex-basis: 80%;
+    height: 40vh;
+    display: flex;
+    background-color: antiquewhite;
+}
+article img {
+    height: 100%;
+    flex-basis: 50%;
+}
+article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.down1 {
+    align-items: center;
+    align-self: center;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+}
+#order {
+    background-color: #f6e6d1;
+    font-size: large;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+#order h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: 100%;
+}
+#order div {
+    margin-left: 7%;
+    margin-bottom: 3%;
+    text-align: left;
+}
+#order h3 {
+    margin-top: 45%;
+}
+.fi {
+    color: rgb(255, 255, 255);
+    margin-right: 91%;
+    margin-bottom: 7%;
+    z-index: 1;
+}
+.fi:hover {
+    color: #c7c1b9;
+}
+#invite input {
+    width: 50%;
+}
+#submit {
+    background-color: #111;
+    height: 8%;
+    color: white;
+    font-size: larger;
+}
+end{
+    color: white;
+    margin-bottom: -2%;
+    text-align: center;
+    margin: 0;
+
+  }
+  table{
+    font-family: Calibri;
+    font-size: large;
+    width: 60%;
+  
+   }
+  
+   td{
+    width: 30%;
+    text-align: center;
+   }
+ 
+.logo{
+  margin: 0;
+  
+  width: 40 px;
+
+}
+
+footer{
+    background-color:black;
+    padding: 1%;
+    text-align: center;
+    font-size:large;
+    color: white;
+    font-family: Calibri;
+    margin-top: 1%;
+  }
+
+
+
+
+@media (max-width: 1250px) {
+    section {
+        flex-basis: 45%;
+    }
+    article {
+        flex-basis: 95%;
+    }
+}
+@media (max-width: 800px) {
+    section {
+        flex-basis: 90%;
+    }
+    #down {
+        width: 95%;
+    }
+}
+@media (max-width: 980px) {
+    article {
+        flex-basis: 90%;
+        height: 60vh;
+    }
+    .down1 {
+        flex-basis: 100%;
+        height: 40%;
+        font-size: 1.5vh;
+        margin-bottom: 4%;
+    }
+    article img {
+        flex-basis: 100%;
+        height: 50%;
+    }
+    #sentence p {
+        font-size: xx-large;
+    }
+    head {
+        display: none;
+    }
+}
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+@keyframes my-animation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
